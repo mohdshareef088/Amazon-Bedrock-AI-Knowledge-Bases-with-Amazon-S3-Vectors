@@ -37,7 +37,6 @@ bedrock-rag-ui/
    git clone [https://github.com/YOUR_USERNAME/bedrock-rag-ui.git](https://github.com/YOUR_USERNAME/bedrock-rag-ui.git)
    cd bedrock-rag-ui
 
-```
 
 2. **Set up a Python Virtual Environment:**
 ```bash
@@ -46,13 +45,11 @@ sudo apt update && sudo apt install -y python3-venv python3-full
 python3 -m venv venv
 source venv/bin/activate
 
-```
 
 3. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 
-```
 
 4. **Configure Environment Variables:**
 
@@ -60,21 +57,19 @@ pip install -r requirements.txt
 `.env` and fill in your AWS configuration:
 nano .env
 
-```
 
 5. **Run the Application:**
 ```bash
 source venv/bin/activate
 uvicorn app:app --host 0.0.0.0 --port 8000
 
-```
 
 6. Open your browser at `http://YOUR_EC2_IP:8000`.
 
 ```
 ---
 
-
+---
 ### 2. `app.py` (Backend)
 
 ```python
@@ -253,7 +248,6 @@ def chat(query: Query):
 </html>
 
 ```
-
 ---
 
 ### 4. `requirements.txt`
