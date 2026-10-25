@@ -1,0 +1,1 @@
+# Amazon-Bedrock-AI-Knowledge-Bases-with-Amazon-S3-Vectors
