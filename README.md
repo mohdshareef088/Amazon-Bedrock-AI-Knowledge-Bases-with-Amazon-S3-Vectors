@@ -105,7 +105,7 @@ def read_root():
 
 bedrock_client = boto3.client(
     service_name="bedrock-agent-runtime",
-    region_name=os.getenv("AWS_REGION", "us-east-1")
+    region_name=os.getenv("AWS_REGION", "ap-southeast-2")
 )
 
 class Query(BaseModel):
@@ -271,11 +271,11 @@ pydantic
 
 ---
 
-### 5. `.env.example`
+### 5. `.env`
 
 ```env
-AWS_REGION=us-east-1
+AWS_REGION=ap-southeast-2
 BEDROCK_KB_ID=YOUR_10_CHAR_KB_ID
-BEDROCK_MODEL_ARN=arn:aws:bedrock:us-east-1:YOUR_ACCOUNT_ID:inference-profile/us.amazon.nova-lite-v1:0
+BEDROCK_MODEL_ARN=arn:aws:bedrock:ap-southeast-2:190176595792:inference-profile/global.amazon.nova-2-lite-v1:0
 
 ```
