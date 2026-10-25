@@ -41,6 +41,8 @@ bedrock-rag-ui/
 
 2. **Set up a Python Virtual Environment:**
 ```bash
+Install the venv module
+sudo apt update && sudo apt install -y python3-venv python3-full
 python3 -m venv venv
 source venv/bin/activate
 
@@ -53,9 +55,9 @@ pip install -r requirements.txt
 ```
 
 4. **Configure Environment Variables:**
-Copy `.env.example` to `.env` and fill in your AWS configuration:
+
 ```bash
-cp .env.example .env
+`.env` and fill in your AWS configuration:
 nano .env
 
 ```
@@ -63,6 +65,7 @@ nano .env
 
 5. **Run the Application:**
 ```bash
+source venv/bin/activate
 uvicorn app:app --host 0.0.0.0 --port 8000
 
 ```
