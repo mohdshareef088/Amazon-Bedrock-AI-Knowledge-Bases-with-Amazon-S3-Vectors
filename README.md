@@ -62,7 +62,6 @@ nano .env
 
 ```
 
-
 5. **Run the Application:**
 ```bash
 source venv/bin/activate
@@ -70,12 +69,11 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 
 ```
 
-
 6. Open your browser at `http://YOUR_EC2_IP:8000`.
 
 ```
-
 ---
+
 
 ### 2. `app.py` (Backend)
 
