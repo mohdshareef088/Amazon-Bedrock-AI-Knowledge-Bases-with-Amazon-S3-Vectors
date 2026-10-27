@@ -8,20 +8,22 @@ A lightweight, full-stack Retrieval-Augmented Generation (RAG) web application p
 ### 📂 Architecture Overview
 
 ```text
-bedrock-rag-ui/
+Amazon-Bedrock-AI-Knowledge-Bases-with-Amazon-S3-Vectors/
+frontend
 ├── app.py
-├── index.html
-├── requirements.txt
-├── .env.example
+backend
+ ├── index.html
+ ├── requirements.txt
+ ├── .env.txt
 └── README.md
 
 ```
 
 ## 🚀 Features
-- **Managed RAG Pipeline**: Leverages Amazon Bedrock Knowledge Base to retrieve data securely from Amazon S3 vector storage without maintaining complex local vector databases.
-- **Advanced AI Model**: Integrated with **Amazon Nova** via system-defined inference profiles for high-speed, cost-effective reasoning.
+- **Self-managed RAG Pipeline**: Amazon Bedrock Knowledge Base to retrieve data securely from Amazon S3 vector storage without maintaining complex local vector databases.
+- **AI Model**: Integrated with **Amazon Nova 2** via system-defined inference profiles for high-speed, cost-effective reasoning.
 - **Full-Stack Implementation**: Clean single-file HTML/Tailwind frontend communicating with a high-performance Python FastAPI backend.
-- **Source Citations**: Displays exact S3 source URIs retrieved alongside model answers for full auditability.
+- **Source**: Displays exact S3 source URIs retrieved alongside model answers for full embedding.
 
 ## 🛠️ Prerequisites and tools used
 - **Frontend**: HTML5, Tailwind CSS, JavaScript (Fetch API)
@@ -33,8 +35,7 @@ bedrock-rag-ui/
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/YOUR_USERNAME/bedrock-rag-ui.git](https://github.com/YOUR_USERNAME/bedrock-rag-ui.git)
-cd bedrock-rag-ui
+git clone https://github.com/mohdshareef088/Amazon-Bedrock-AI-Knowledge-Bases-with-Amazon-S3-Vectors.git
   ```
 2. **Set up a Python Virtual Environment:**
 ```bash
