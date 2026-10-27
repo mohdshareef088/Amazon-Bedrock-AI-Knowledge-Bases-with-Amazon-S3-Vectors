@@ -1,23 +1,11 @@
 
 # AWS Bedrock RAG Knowledge Base & Chatbot
+A lightweight, full-stack Retrieval-Augmented Generation (RAG) web application powered by **Amazon Bedrock Knowledge Bases**, **Amazon S3 Vectors**, and **Amazon Nova**, with a FastAPI backend and a responsive Tailwind CSS frontend
 
+## Architecture Diagram
 <img width="1414" height="700" alt="Screenshot 2026-10-25 141124" src="https://github.com/user-attachments/assets/62699b96-1e6a-45ce-9c08-52a79d2fadde" />
 
-A lightweight, full-stack Retrieval-Augmented Generation (RAG) web application powered by **Amazon Bedrock Knowledge Bases**, **Amazon S3 Vectors**, and **Amazon Nova**, with a FastAPI backend and a responsive Tailwind CSS frontend.
-
-## 🚀 Features
-- **Managed RAG Pipeline**: Leverages Amazon Bedrock Knowledge Base to retrieve data securely from Amazon S3 vector storage without maintaining complex local vector databases.
-- **Advanced AI Model**: Integrated with **Amazon Nova** via system-defined inference profiles for high-speed, cost-effective reasoning.
-- **Full-Stack Implementation**: Clean single-file HTML/Tailwind frontend communicating with a high-performance Python FastAPI backend.
-- **Source Citations**: Displays exact S3 source URIs retrieved alongside model answers for full auditability.
-
-## 🛠️ Tech Stack
-- **Frontend**: HTML5, Tailwind CSS, JavaScript (Fetch API)
-- **Backend**: Python, FastAPI, Uvicorn, Boto3 (AWS SDK)
-- **Cloud Infrastructure**: Amazon Bedrock, Amazon S3, IAM
-
-
-### 📂 Repository File Structure
+### 📂 Architecture Overview
 
 ```text
 bedrock-rag-ui/
@@ -29,48 +17,65 @@ bedrock-rag-ui/
 
 ```
 
+## 🚀 Features
+- **Managed RAG Pipeline**: Leverages Amazon Bedrock Knowledge Base to retrieve data securely from Amazon S3 vector storage without maintaining complex local vector databases.
+- **Advanced AI Model**: Integrated with **Amazon Nova** via system-defined inference profiles for high-speed, cost-effective reasoning.
+- **Full-Stack Implementation**: Clean single-file HTML/Tailwind frontend communicating with a high-performance Python FastAPI backend.
+- **Source Citations**: Displays exact S3 source URIs retrieved alongside model answers for full auditability.
+
+## 🛠️ Prerequisites and tools used
+- **Frontend**: HTML5, Tailwind CSS, JavaScript (Fetch API)
+- **Backend**: Python, FastAPI, Uvicorn, Boto3 (AWS SDK)
+- **Cloud Infrastructure**: Amazon Bedrock, Amazon S3, IAM
+
 ---
-## ⚙️ Local Setup & Installation
+## ⚙️ Executions & Installation
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/bedrock-rag-ui.git](https://github.com/YOUR_USERNAME/bedrock-rag-ui.git)
-   cd bedrock-rag-ui
-
-
+```bash
+git clone [https://github.com/YOUR_USERNAME/bedrock-rag-ui.git](https://github.com/YOUR_USERNAME/bedrock-rag-ui.git)
+cd bedrock-rag-ui
+  ```
 2. **Set up a Python Virtual Environment:**
 ```bash
 Install the venv module
 sudo apt update && sudo apt install -y python3-venv python3-full
 python3 -m venv venv
 source venv/bin/activate
-
-
+  ```
 3. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
-
-
+`requirements.txt`
+```text
+fastapi
+uvicorn
+boto3
+python-dotenv
+pydantic
+```
 4. **Configure Environment Variables:**
-
 ```bash
 `.env` and fill in your AWS configuration:
 nano .env
-
-
+```env
+AWS_REGION=ap-southeast-2
+BEDROCK_KB_ID=YOUR_10_CHAR_KB_ID
+BEDROCK_MODEL_ARN=arn:aws:bedrock:ap-southeast-2:190176595792:inference-profile/global.amazon.nova-2-lite-v1:0
+  ```
 5. **Run the Application:**
 ```bash
 source venv/bin/activate
 uvicorn app:app --host 0.0.0.0 --port 8000
-
-
-6. Open your browser at `http://YOUR_EC2_IP:8000`.
-
+  ```
+6. **Open your browser at `http://YOUR_EC2_IP:8000`**
 ```
 ---
-
 ---
-### 2. `app.py` (Backend)
+
+## **🚀Application Build**
+
+### `app.py` (Backend)
 
 ```python
 import os
@@ -140,7 +145,7 @@ def chat(query: Query):
 
 ---
 
-### 3. `index.html` (Frontend UI)
+### `index.html` (Frontend UI)
 
 ```html
 <!DOCTYPE html>
@@ -249,25 +254,7 @@ def chat(query: Query):
 
 ```
 ---
-
-### 4. `requirements.txt`
-
-```text
-fastapi
-uvicorn
-boto3
-python-dotenv
-pydantic
-
-```
-
+##🧪 Screenshots
 ---
 
-### 5. `.env`
 
-```env
-AWS_REGION=ap-southeast-2
-BEDROCK_KB_ID=YOUR_10_CHAR_KB_ID
-BEDROCK_MODEL_ARN=arn:aws:bedrock:ap-southeast-2:190176595792:inference-profile/global.amazon.nova-2-lite-v1:0
-
-```
