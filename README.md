@@ -69,11 +69,11 @@ source venv/bin/activate
 uvicorn app:app --host 0.0.0.0 --port 8000
   ```
 6. **Open your browser at `http://YOUR_EC2_IP:8000`**
-```
----
----
 
-## **🚀Application Build**
+
+<img width="1299" height="590" alt="image" src="https://github.com/user-attachments/assets/1c3f7307-dc08-4ae1-8722-46d790d42783" />
+
+---
 
 ### `app.py` (Backend)
 
@@ -254,7 +254,30 @@ def chat(query: Query):
 
 ```
 ---
-##🧪 Screenshots
+## 🧪 Screenshots
 ---
+## Creating Bucket and adding files
+<img width="1368" height="588" alt="image" src="https://github.com/user-attachments/assets/866a2fa8-a4d3-451b-81b0-e43249adfea4" />
+
+## Embedding and Syncing vector database
+<img width="1899" height="831" alt="image" src="https://github.com/user-attachments/assets/a3a42f6f-d8cc-45f7-a98b-1c707dfdaf9f" />
+
+## Testing Model 
+<img width="1876" height="811" alt="image" src="https://github.com/user-attachments/assets/05de2e11-51b9-4d8c-9b8f-773b440e7824" />
+
+---
+
+### 🧪 (Frontend UI)
+
+<img width="682" height="654" alt="image" src="https://github.com/user-attachments/assets/ec8596f8-a8a3-4124-91de-02d44c506c42" />
+
+<img width="687" height="791" alt="image" src="https://github.com/user-attachments/assets/cbb769b7-bbe0-4cdd-b0f6-0aa139e42420" />
+
+
+### 🧪 (Frontend UI with React)
+
+<img width="467" height="214" alt="image" src="https://github.com/user-attachments/assets/53d553de-c1a2-40f6-859d-6cf56cc99088" />
+
+<img width="1912" height="2051" alt="image" src="https://github.com/user-attachments/assets/ef9b6c5a-e12e-45b8-8771-f5ad626121b2" />
 
 
