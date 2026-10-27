@@ -274,7 +274,7 @@ def chat(query: Query):
 <img width="687" height="791" alt="image" src="https://github.com/user-attachments/assets/cbb769b7-bbe0-4cdd-b0f6-0aa139e42420" />
 
 
-### 🧪 (Frontend UI with React)
+### 🧪 (Optional Frontend UI with React)
 
 <img width="467" height="214" alt="image" src="https://github.com/user-attachments/assets/53d553de-c1a2-40f6-859d-6cf56cc99088" />
 
